@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Personal Blog Main Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="assets/images/brightness-and-contrast.png" alt="theme-toggle-image" class="theme-toggle" />
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container" >
+            <div class="my-first-blog">
+                <h2>My First Blog</h2>
+            </div>
+        </section>
+         <form id="comment-form">
+            <div>
+                <h2>What's on your mind?</h2>
+            </div>
+            <div>
+                <label for="username">Username:</label
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="4" cols="50" required></textarea>
+            </div>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
