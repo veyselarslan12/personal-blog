@@ -25,6 +25,11 @@ img {
     font-size: 30px;
     background-color: yellow;
 }
+.form-header h2 {
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 form {
     margin: 0 auto;
     display: flex;
@@ -33,4 +38,25 @@ form {
     border: 10px solid black;
     width: 50%;
     
+}
+
+.form-username, .form-title, .form-comment {
+    font-size: 40px;
+    flex-direction: column;
+    margin: 20px;
+    width: 80%;
+    
+}
+input {
+    padding: 20px;
+}
+button {
+    background-color: black;
+    color: white;
+    width: 80%;
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+
 }
