@@ -40,7 +40,7 @@ form {
     
 }
 
-.form-username, .form-title, .form-comment {
+.form-username, .form-title, .form-content {
     font-size: 25px;
     flex-direction: column;
     margin: 20px;

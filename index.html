@@ -10,7 +10,9 @@
     <header>
         <nav>
             <div>
-                <img id="togglebtn" src="assets/images/brightness-and-contrast.png" alt="theme-toggle-image" class="theme-toggle" />
+                <a>
+                    <img id="togglebtn" src="assets/images/brightness-and-contrast.png" alt="theme-toggle-image" class="theme-toggle" />
+                </a>
             </div>
         </nav>
     </header>
@@ -32,12 +34,13 @@
                 <label for="title">Title:</label>
                 <input type="text" id="title" name="title" required>
             </div>
-            <div class="form-comment">
-                <label for="comment">Content:</label>
-                <textarea id="comment" name="content" rows="4" cols="50" required ></textarea>
+            <div class="form-content">
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" rows="4" cols="50" required ></textarea>
             </div>
-            <button type="button" onclick="submitForm()">Submit</button>
+            <button id="submit" type="button" onclick="submitForm()">Submit</button>
         </form>
     </main>
+    <script src="assets/js/form.js"></script>
 </body>
 </html>
