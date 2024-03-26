@@ -51,7 +51,7 @@ input {
     padding: 15px;
 }
 
-button {
+#form-submit {
     background-color: black;
     color: white;
     width: 80%;
@@ -60,4 +60,8 @@ button {
     font-size: 20px;
     border-radius: 20px;
 }
-
+.form-submit {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
