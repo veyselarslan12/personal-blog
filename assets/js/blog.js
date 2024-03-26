@@ -1,6 +1,3 @@
-
-
-
 function savedFormData() {
     const blogTitle = document.querySelector('blog-title-text')
     const blogContent = document.querySelector('blog-content-text')
