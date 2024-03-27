@@ -66,3 +66,10 @@ footer {
     margin: 40px 0 40px 0;
     padding-bottom: 40px;
 }
+
+footer a, footer p {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+}
