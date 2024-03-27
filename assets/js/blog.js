@@ -1,4 +1,4 @@
-const savedData = JSON.parse(localStorage.getItem(formData))
+const savedData = JSON.parse(localStorage.getItem('formData'))
 
 
 const backButton = document.getElementById('back-button')
@@ -6,6 +6,11 @@ const titleEl = document.querySelector('blog-title-text')
 const contentEl = document.querySelector('blog-content-text')
 const usernameEl = document.querySelector('blog-username-text')
 const section = document.getElementById('container')
+
+backButton.addEventListener('click', function(event){
+    event.preventDefault()
+    window.location.href = 'http://127.0.0.1:5500/index.html';
+})
 
 
 if (savedData) {
@@ -22,11 +27,12 @@ if (savedData) {
     section.appendChild(contentEl);
     section.appendChild(usernameEl);
 
+    // savedData.push(formData)
+
     
 
 }
     
-
 
 
 

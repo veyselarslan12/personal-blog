@@ -17,6 +17,7 @@ submitButton.addEventListener('click', function(event) {
      // save data to Local Storage
     localStorage.setItem('formData',JSON.stringify(formData)) 
     
+    window.location.href = 'http://127.0.0.1:5500/blog.html';
     // Clear the form
     form.reset() 
 
