@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Personal Blog Main Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div>
-                <a>
-                <img id="togglebtn" src="assets/images/brightness-and-contrast.png" alt="theme-toggle-image" class="theme-toggle" />
-                </a>a
-            </div>
-        </nav>
+      <nav>
+        <div>
+          <a>
+            <img
+              id="togglebtn"
+              src="assets/images/brightness-and-contrast.png"
+              alt="theme-toggle-image"
+              class="theme-toggle"
+            />
+          </a>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="container" >
-            <div class="my-first-blog">
-                <h2>My First Blog</h2>
-            </div>
-        </section>
-         <form id="myForm">
-            <div class="form-header">
-                <h2>What's on your mind?</h2>
-            </div>
-            <div class="form-username">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="form-title">
-                <label for="title">Title:</label>
-                <input type="text" id="title" name="title" required>
-            </div>
-            <div class="form-content">
-                <label for="content">Content:</label>
-                <textarea id="content" name="content" rows="4" cols="50" required ></textarea>
-            </div>
-             <a class="form-submit" href="https://www.google.com" >
-                 <button id="form-submit" type="button" >Submit</button>
-             </a>
-        </form>
+      <section class="container">
+        <div class="my-first-blog">
+          <h2>My First Blog</h2>
+        </div>
+      </section>
+      <form id="myForm">
+        <div class="form-header">
+          <h2>What's on your mind?</h2>
+        </div>
+        <div class="form-username">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-title">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required />
+        </div>
+        <div class="form-content">
+          <label for="content">Content:</label>
+          <textarea
+            id="content"
+            name="content"
+            rows="4"
+            cols="50"
+            required
+          ></textarea>
+        </div>
+
+        <button id="form-submit" type="button">Submit</button>
+      </form>
     </main>
+    <script src="assets/js/logic.js"></script>
     <script src="assets/js/form.js"></script>
-</body>
+  </body>
 </html>
