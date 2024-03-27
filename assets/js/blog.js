@@ -1,4 +1,4 @@
-const savedData = JSON.parse(localStorage.getItem('formData'))
+const savedData = JSON.parse(localStorage.getItem('formData')) || []
 
 
 const backButton = document.getElementById('back-button')
@@ -12,26 +12,30 @@ backButton.addEventListener('click', function(event){
     window.location.href = 'http://127.0.0.1:5500/index.html';
 })
 
+for (let i = 0; i  < savedData.length; i++) {
+    const post = savedData [i]
+    
+    const div = document.createElement('div')
+    div.setAttribute('class', 'blog-post')
 
-if (savedData) {
     const titleEl = document.createElement("h2");
-    titleEl.textContent = formData.title;
+    titleEl.textContent = post.title;
 
     const contentEl = document.createElement('p');
-    contentEl.textContent = formData.content;
+    contentEl.textContent = post.content;
 
     const usernameEl = document.createElement('p');
-    usernameEl.textContent = `Posted by: ${formData.username}`;
+    usernameEl.textContent = `Posted by: ${post.username}`;
 
-    section.appendChild(titleEl);
-    section.appendChild(contentEl);
-    section.appendChild(usernameEl);
+    div.appendChild(titleEl);
+    div.appendChild(contentEl);
+    div.appendChild(usernameEl);
 
-    // savedData.push(formData)
-
+    section.appendChild(div)
     
-
 }
+
+
     
 
 
