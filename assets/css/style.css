@@ -4,7 +4,7 @@ body {
     background-color: #f0f0f0;
     color: #333;
 }   
-/* toggle theme styling codes here */
+/* Toggle theme styling codes here */
 .dark-mode {
     background-color: #333;
     color: #f0f0f0;
@@ -13,20 +13,20 @@ body {
     }
 }
 
-
+/* Nav bar flex box codes here */
 div {
     display: flex;
     justify-content: flex-end;
     position: relative;
 }
-
+/* Toggle image */
 img {
     width: 50px;
     height: 50px;
     float: right;
     margin: 15px;
 }
-
+/* Nav bar styling codes here */
 .my-first-blog {
     border: 7px solid black;
     display: block;
@@ -50,7 +50,7 @@ form {
     width: 50%;
     
 }
-
+/* Inputs styling codes here */
 .form-username, .form-title, .form-content {
     font-size: 25px;
     flex-direction: column;
@@ -76,3 +76,4 @@ input {
     display: flex;
     justify-content: center;
 }
+

@@ -1,51 +1,23 @@
-const currentTheme = localStorage.getItem('theme')
-document.body.classList.add(currentTheme)
+const currentTheme = localStorage.getItem('theme'); // Getting the theme from Local Storage
+document.body.classList.add(currentTheme);
 
 
 let isLightMode = true; // Initial mode is light mode
 
 const modeToggle = document.getElementById('togglebtn'); //  Get the toggle button element
 
+//  Adding event listener to change themes when clicked on the toggle button with a function that changes the class of body and sets the value 
 function toggleMode() {
     isLightMode = !isLightMode; // Toggle the mode
     document.body.classList.toggle('dark-mode', !isLightMode); 
     if(document.body.classList.contains("dark-mode")){
-        localStorage.setItem('theme','dark-mode')
+        localStorage.setItem('theme','dark-mode');
     } else {
-        localStorage.setItem('theme', 'light-mode')
+        localStorage.setItem('theme', 'light-mode');
     }
     
-    // Toggle dark mode class based on the mode
-} //  Add event listener to call toggleMode function when clicked
+   
+} 
 
 modeToggle.addEventListener('click', toggleMode); 
-
-
-
-// const darkModeToggle = document.getElementById('toggleBtn');
-// const body = document.body;
-
-// darkModeToggle.addEventListener('click', function (){
-//     body.classList.toggle('dark-mode');
-// })
-
-// // Add event listener to the image element
-// document.getElementById('modeToggle').addEventListener('click', function() {
-//     // Toggle a class on the body to switch between light and dark mode
-//     document.body.classList.toggle('dark-mode');
-// });
-
-
-
-// const modeToggle = document.getElementById('togglebtn')
-// const body = document.body
-
-// // Add event listener to a parent element
-// document.body.addEventListener('click', function(event) {
-//     // Check if the clicked element is the button for toggling modes
-//     if (event.target.id === 'modeToggle') {
-//         // Toggle a class on the body to switch between light and dark mode
-//         document.body.classList.toggle('dark-mode');
-//     }
-// });
 
