@@ -1,10 +1,21 @@
+const currentTheme = localStorage.getItem('theme')
+document.body.classList.add(currentTheme)
+
+
 let isLightMode = true; // Initial mode is light mode
 
 const modeToggle = document.getElementById('togglebtn'); //  Get the toggle button element
 
 function toggleMode() {
     isLightMode = !isLightMode; // Toggle the mode
-    document.body.classList.toggle('dark-mode', !isLightMode); // Toggle dark mode class based on the mode
+    document.body.classList.toggle('dark-mode', !isLightMode); 
+    if(document.body.classList.contains("dark-mode")){
+        localStorage.setItem('theme','dark-mode')
+    } else {
+        localStorage.setItem('theme', 'light-mode')
+    }
+    
+    // Toggle dark mode class based on the mode
 } //  Add event listener to call toggleMode function when clicked
 
 modeToggle.addEventListener('click', toggleMode); 
