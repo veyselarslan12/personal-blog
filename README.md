@@ -32,6 +32,6 @@
 
 ## Links
 
-* [Github Repository](https://github.com/veyselarslan12?tab=repositories)
+* [Github Repository](https://github.com/veyselarslan12/personal-blog)
 
 * [Deployment Website Link](https://veyselarslan12.github.io/personal-blog/)
