@@ -18,6 +18,9 @@ body {
         background-color: white;
         color: black;
     }
+    .blog-post {
+        border-color: white;
+    }
 }
   
 
