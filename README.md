@@ -30,6 +30,9 @@
 * I also learned that you can add an attribute to an element by accessing its attributes property. 
 * I learned how to make toggle mode for website.
 
+## APPLICATION PAGE
+![application](./assets/images/application.png)
+
 ## Links
 
 * [Github Repository](https://github.com/veyselarslan12/personal-blog)
